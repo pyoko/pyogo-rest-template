@@ -4,10 +4,11 @@ import "gorm.io/gorm"
 
 type Post struct {
 	gorm.Model
-	Title   	string   `db:"title" json:"title"`
+	Title   	string   `db:"title" json:"Title"`
+	UserID 		uint
 }
 
-func (db *DB) GetPosts() (posts []Post, err error) {
+func (db *DB) GetPosts() (posts []*Post, err error) {
 	//db.Limit(10).Offset(5).Find(&users)
 	err = db.Find(&posts).Error
 

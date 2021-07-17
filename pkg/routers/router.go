@@ -28,7 +28,8 @@ func (ro *Router) Init() http.Handler {
 
 	r.Route("/v1", func(r chi.Router) {
 		v1Router := v1.NewRouter(ro.persistence)
-		r.Mount("/posts", v1Router.Init())
+		r.Mount("/posts", v1Router.PostInit())
+		r.Mount("/users", v1Router.UserInit())
 	})
 
 	return r

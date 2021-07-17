@@ -12,6 +12,7 @@ var (
 	ErrForbidden      = errors.New("forbidden")
 	ErrNotFound       = errors.New("resource not found")
 	ErrInvalidRequest = errors.New("invalid request")
+	ErrResponse		  = errors.New("error rendering response")
 )
 
 func PresentError(r *http.Request, err error) (*http.Request, interface {}) {
@@ -24,6 +25,8 @@ func PresentError(r *http.Request, err error) (*http.Request, interface {}) {
 			render.Status(r, http.StatusNotFound)
 		case ErrInvalidRequest:
 			render.Status(r, http.StatusBadRequest)
+		case ErrResponse:
+			render.Status(r, http.StatusUnprocessableEntity          )
 		default:
 			render.Status(r, http.StatusInternalServerError)
 	}
