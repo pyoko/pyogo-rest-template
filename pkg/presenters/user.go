@@ -16,7 +16,7 @@ type User struct {
 }
 
 func (a *User) Render(w http.ResponseWriter, r *http.Request) error {
-	a.SelfURL = fmt.Sprintf("http://localhost:3000/v1/user/%v", a.ID)
+	a.SelfURL = fmt.Sprintf("http://localhost:3000/v1/users/%v", a.ID)
 	return nil
 }
 
