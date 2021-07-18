@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/pyoko/gorest/pkg/models"
+	"github.com/pyoko/pyogo-rest-template/pkg/models"
 	"gorm.io/gorm"
 )
 

@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"
-	"github.com/pyoko/gorest/pkg/models"
-	"github.com/pyoko/gorest/pkg/presenters"
-	"github.com/pyoko/gorest/pkg/requests"
+	"github.com/pyoko/pyogo-rest-template/pkg/models"
+	"github.com/pyoko/pyogo-rest-template/pkg/presenters"
+	"github.com/pyoko/pyogo-rest-template/pkg/requests"
 )
 
 type Router struct {

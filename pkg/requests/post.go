@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/pyoko/gorest/pkg/models"
+	"github.com/pyoko/pyogo-rest-template/pkg/models"
 )
 
 

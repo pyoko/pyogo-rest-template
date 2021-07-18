@@ -1,4 +1,4 @@
-module github.com/pyoko/gorest
+module github.com/pyoko/pyogo-rest-template
 
 go 1.16
 

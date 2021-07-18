@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	db "github.com/pyoko/gorest/pkg/models"
-	v1 "github.com/pyoko/gorest/pkg/routers/v1"
+	db "github.com/pyoko/pyogo-rest-template/pkg/models"
+	v1 "github.com/pyoko/pyogo-rest-template/pkg/routers/v1"
 )
 
 type Router struct {

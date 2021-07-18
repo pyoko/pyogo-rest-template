@@ -10,9 +10,9 @@ import (
 	"syscall"
 	"time"
 
-	db "github.com/pyoko/gorest/pkg/models"
-	"github.com/pyoko/gorest/pkg/routers"
-	"github.com/pyoko/gorest/pkg/settings"
+	db "github.com/pyoko/pyogo-rest-template/pkg/models"
+	"github.com/pyoko/pyogo-rest-template/pkg/routers"
+	"github.com/pyoko/pyogo-rest-template/pkg/settings"
 )
 
 func main() {

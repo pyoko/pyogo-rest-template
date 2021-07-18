@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/render"
-	"github.com/pyoko/gorest/pkg/models"
+	"github.com/pyoko/pyogo-rest-template/pkg/models"
 )
 
 type User struct {

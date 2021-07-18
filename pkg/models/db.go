@@ -7,7 +7,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
-	"github.com/pyoko/gorest/pkg/settings"
+	"github.com/pyoko/pyogo-rest-template/pkg/settings"
 )
 
 type DB struct {
